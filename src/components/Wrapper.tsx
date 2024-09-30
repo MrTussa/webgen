@@ -8,13 +8,23 @@ interface WrapperProps {
 
 const Wrapper = ({ header, children }: WrapperProps) => {
   return (
-    <div>
+    <div className="relative min-h-screen flex flex-col justify-between">
       <div className="absolute w-full h-24 z-10">
-        <Image src="/border-top.svg" alt="" fill className="object-cover" />
+        <Image
+          src="/border-top.svg"
+          alt=""
+          fill
+          className="object-cover svg-shadow-up"
+        />
       </div>
       {children}
-      <div className="absolute w-full h-24 z-10 top-[90%]">
-        <Image src="/border-bottom.svg" alt="" fill className="object-cover" />
+      <div className="absolute w-full h-24 z-10 bottom-0">
+        <Image
+          src="/border-bottom.svg"
+          alt=""
+          fill
+          className="object-cover svg-shadow-down"
+        />
       </div>
     </div>
   );

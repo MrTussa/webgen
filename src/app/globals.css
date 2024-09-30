@@ -67,3 +67,9 @@
     @apply bg-background text-foreground;
   }
 }
+.svg-shadow-up {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+}
+.svg-shadow-down {
+  filter: drop-shadow(0 -10px 5px rgba(0, 0, 0, 0.2));
+}
