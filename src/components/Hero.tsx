@@ -14,14 +14,16 @@ const Hero = () => {
               alt="logo"
               width={300}
               height={150}
-              className="absolute left-0 top-8"
+              className="absolute left-10 top-1/4"
             />
             <TextFade
               direction="up"
               className="pt-0 pb-5 flex-col flex justify-center items-center space-y-0"
             >
               <h1 className="text-gray-100 text-6xl">
-                Открой новые возможности
+                Откройте
+                <br />
+                новые возможности
                 <br />
                 для своего дела!
               </h1>

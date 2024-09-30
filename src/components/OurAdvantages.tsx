@@ -1,14 +1,15 @@
 import React from "react";
 import Wrapper from "./Wrapper";
+import FeaturesSection from "./blocks/features-section";
 
 const OurAdvantages = () => {
   return (
     <div>
       <Wrapper>
-        <section className="pt-24 w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 bg-black bg-grid-white/[0.2]">
-          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-          <h2 className="text-7xl mb-4">Наши Преимущества</h2>
-          <div></div>
+        <section className="pt-24 pb-24 w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 bg-black min-h-screen bg-grid-small-white/[0.2] relative flex flex-col items-center justify-center">
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+          <h2 className="text-7xl mb-4 text-center">Наши Преимущества</h2>
+          <FeaturesSection />
         </section>
       </Wrapper>
     </div>

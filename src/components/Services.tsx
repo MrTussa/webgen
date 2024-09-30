@@ -8,9 +8,12 @@ const Skeleton = () => (
 
 const Services = () => {
   return (
-    <section className="bg-black-secondary w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 ">
-      <h2 className="text-7xl mb-4">Наши услуги</h2>
-      <BentoGrid className=" mx-auto">
+    <section className="bg-black-secondary z-0 w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 relative">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-dot-black -z-10 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent)]" />
+      <h2 className="text-7xl mb-7 text-center bg-gradient-to-r from-gray-700 to-gray-100 bg-clip-text text-transparent">
+        Наши услуги
+      </h2>
+      <BentoGrid className="mx-auto ">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
@@ -32,20 +35,20 @@ const items = [
     description:
       "Веб сайты под ключ, Лендинги, интернет магазины, доработки сайтов, корпоративный сайт - все это можно заказать у нас!",
     header: <Skeleton />,
-    className: "md:row-span-2 md:flex-col sm:flex-row-reverse",
+    className: "md:row-span-2 md:flex-col sm:flex-row-reverse flex-col",
   },
   {
     title: "Телеграм Боты",
     description:
       "Сделаем ботов анонимных сообщений, боты интернет магазинов с поддержкой различных языков",
     header: <Skeleton />,
-    className: " flex-row-reverse",
+    className: "sm:flex-row-reverse flex-col",
   },
   {
     title: "3Д Модели и Архитектура",
     description: "3Д модели любой сложности, Архитектура, Чертежи, Анимации",
     header: <Skeleton />,
-    className: " flex-row-reverse",
+    className: "sm:flex-row-reverse flex-col",
   },
 ];
 
