@@ -1,3 +1,4 @@
+import HeaderText from "./HeaderText";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
 const Skeleton = () => (
@@ -10,9 +11,7 @@ const Services = () => {
   return (
     <section className="bg-black-secondary z-0 w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 relative">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-dot-black -z-10 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent)]" />
-      <h2 className="text-7xl mb-7 text-center bg-gradient-to-r from-gray-700 to-gray-100 bg-clip-text text-transparent">
-        Наши услуги
-      </h2>
+      <HeaderText text="Наши Услуги" />
       <BentoGrid className="mx-auto ">
         {items.map((item, i) => (
           <BentoGridItem
