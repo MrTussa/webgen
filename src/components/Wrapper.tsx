@@ -14,7 +14,7 @@ const Wrapper = ({ header, children }: WrapperProps) => {
           src="/border-top.svg"
           alt=""
           fill
-          className="object-cover svg-shadow-up"
+          className="object-cover svg-shadow-up [mask-image:linear-gradient(to_top,transparent_-40%,black)]"
         />
       </div>
       {children}
@@ -23,7 +23,7 @@ const Wrapper = ({ header, children }: WrapperProps) => {
           src="/border-bottom.svg"
           alt=""
           fill
-          className="object-cover svg-shadow-down"
+          className="object-cover svg-shadow-down [mask-image:linear-gradient(to_bottom,transparent_-40%,black)]"
         />
       </div>
     </div>
