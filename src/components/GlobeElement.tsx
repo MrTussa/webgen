@@ -394,7 +394,7 @@ export default function GlobeDemo() {
   ];
 
   return (
-    <div className="w-1/2 h-[80vh] ">
+    <div className="lg:w-1/2 w-full lg:h-[80vh] h-[70vh] ">
       <World data={sampleArcs} globeConfig={globeConfig} />{" "}
     </div>
   );
