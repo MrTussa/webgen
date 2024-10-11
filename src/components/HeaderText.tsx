@@ -8,7 +8,7 @@ interface HeaderTextProps {
 const HeaderText = ({ text }: HeaderTextProps) => {
   return (
     <TextFade direction="down">
-      <h2 className="text-7xl mb-4 text-center bg-gradient-to-r from-gray-700 to-gray-100 bg-clip-text text-transparent ">
+      <h2 className="text-4xl sm:text-7xl mb-4 text-center bg-gradient-to-r from-gray-700 to-gray-100 bg-clip-text text-transparent ">
         {text}
       </h2>
     </TextFade>
