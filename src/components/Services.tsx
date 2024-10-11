@@ -1,3 +1,4 @@
+import Image from "next/image";
 import HeaderText from "./HeaderText";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
@@ -36,20 +37,41 @@ const items = [
     title: "Сайты",
     description:
       "Веб сайты под ключ, Лендинги, интернет магазины, доработки сайтов, корпоративный сайт - все это можно заказать у нас!",
-    header: <Skeleton />,
+    header: (
+      <Image
+        src="/lama.png"
+        alt="sites"
+        fill
+        className="object-cover rounded-2xl"
+      />
+    ),
     className: "md:row-span-2 md:flex-col sm:flex-row-reverse flex-col",
   },
   {
     title: "Телеграм Боты",
     description:
       "Сделаем ботов анонимных сообщений, боты интернет магазинов с поддержкой различных языков",
-    header: <Skeleton />,
+    header: (
+      <Image
+        src="/telegram.jpg"
+        alt="telegram bots"
+        fill
+        className="object-cover rounded-2xl"
+      />
+    ),
     className: "sm:flex-row-reverse flex-col",
   },
   {
     title: "3Д Модели и Архитектура",
     description: "3Д модели любой сложности, Архитектура, Чертежи, Анимации",
-    header: <Skeleton />,
+    header: (
+      <Image
+        src="/blender.jpg"
+        alt="3D"
+        fill
+        className="object-cover rounded-2xl"
+      />
+    ),
     className: "sm:flex-row-reverse flex-col",
   },
 ];
