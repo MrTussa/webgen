@@ -98,7 +98,7 @@ const Form = () => {
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Выберите Услугу</Label>
           <Select value={form.service} onValueChange={handleFormChange}>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger className="">
               <SelectValue placeholder="Услуги" />
             </SelectTrigger>
             <SelectContent>
@@ -129,9 +129,19 @@ const Form = () => {
           onChange={handleChange}
         />
       </LabelInputContainer>
-
+      <label className="text-gray-400 text-sm">
+        Нажимая кнопку вы соглашаетесь с <br />
+        <a
+          target="_blank"
+          href="https://docs.google.com/document/d/1ED6Rtfmj4FdHneWn0zEJ3yCnfF4xuE02/edit?usp=sharing&ouid=109348180616144411058&rtpof=true&sd=true"
+          rel="noopener noreferrer"
+          className="cursor-pointer underline"
+        >
+          Пользовательским Соглашением
+        </a>
+      </label>
       <button
-        className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+        className="mt-4 bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
         type="submit"
       >
         {loading ? "Отправка..." : "Отправить →"}

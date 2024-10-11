@@ -7,7 +7,7 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 
 const AboutUs = () => {
   return (
-    <section className="relative">
+    <section className="relative" id="aboutUs">
       <Wrapper>
         <BackgroundLines className="flex">
           <div className=" flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mb-10">
@@ -46,25 +46,25 @@ const people = [
     id: 2,
     name: "Скирдач Артемий",
     designation: "Manager",
-    image: "/shahruz.jpg",
+    image: "/artem.png",
   },
   {
     id: 3,
     name: "Жуков Дмитрий",
     designation: "Backend Developer",
-    image: "/shahruz.jpg",
+    image: "/dima.png",
   },
   {
     id: 4,
     name: "Саман",
     designation: "UX Designer",
-    image: "/shahruz.jpg",
+    image: "/saman.png",
   },
   {
     id: 5,
     name: "Гайсин Никита",
     designation: "3D Artist",
-    image: "/shahruz.jpg",
+    image: "/nikita.png",
   },
 ];
 

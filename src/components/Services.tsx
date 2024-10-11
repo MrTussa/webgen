@@ -9,7 +9,10 @@ const Skeleton = () => (
 
 const Services = () => {
   return (
-    <section className="bg-black-secondary z-0 w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 relative">
+    <section
+      className="bg-black-secondary z-0 w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 relative"
+      id="services"
+    >
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-dot-black -z-10 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent)]" />
       <HeaderText text="Наши Услуги" />
       <BentoGrid className="mx-auto ">

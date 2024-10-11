@@ -1,7 +1,6 @@
 import React from "react";
 import Wrapper from "./Wrapper";
 import FeaturesSection from "./blocks/features-section";
-import { TextFade } from "./TextFade";
 import HeaderText from "./HeaderText";
 
 const OurAdvantages = () => {

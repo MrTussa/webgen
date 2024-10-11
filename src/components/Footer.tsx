@@ -28,10 +28,20 @@ const Footer = () => {
           <div className="flex flex-col justify-between">
             <h4 className="font-medium text-lg mb-7">О Проекте</h4>
             <div className="flex flex-col gap-6 text-gray-600">
-              <Link href="/">О нас</Link>
-              <Link href="/">Услуги</Link>
-              <Link href="/">Контакты</Link>
-              <Link href="/">Пользовательское Соглашение</Link>
+              <Link href="#aboutUs" scroll={true}>
+                О нас
+              </Link>
+              <Link href="#services" scroll={true}>
+                Услуги
+              </Link>
+              <a
+                target="_blank"
+                href="https://docs.google.com/document/d/1ED6Rtfmj4FdHneWn0zEJ3yCnfF4xuE02/edit?usp=sharing&ouid=109348180616144411058&rtpof=true&sd=true"
+                rel="noopener noreferrer"
+                className="cursor-pointer "
+              >
+                Пользовательское Соглашение
+              </a>
             </div>
           </div>
         </div>
@@ -40,15 +50,10 @@ const Footer = () => {
         <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
           <span className="font-semibold">Безопасные переводы</span>
           <div className="flex justify-between">
-            <Image src="/discover.png" alt="discover" width={40} height={20} />
+            <Image src="/visa.png" alt="visa" width={40} height={20} />
             <Image src="/skrill.png" alt="skrill" width={40} height={20} />
             <Image src="/paypal.png" alt="paypal" width={40} height={20} />
-            <Image
-              src="/mastercard.png"
-              alt="mastercard"
-              width={40}
-              height={20}
-            />
+            <Image src="/visa.png" alt="visa" width={40} height={20} />
             <Image src="/visa.png" alt="visa" width={40} height={20} />
           </div>
         </div>

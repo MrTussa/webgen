@@ -1,61 +1,62 @@
 import { cn } from "@/lib/utils";
 import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
+  IconCheck,
+  IconCode,
+  IconUser,
+  IconMessageChatbot,
+  IconGraph,
+  IconWallet,
+  IconDeviceMobile,
+  IconGrowth,
 } from "@tabler/icons-react";
 
 export default function FeaturesSection() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Индивидуальный подход",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+        "Мы разрабатываем сайты, которые отражают уникальность вашего бизнеса.",
+      icon: <IconUser />,
     },
     {
-      title: "Ease of use",
+      title: "Современные технологии",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        "Используем только передовые технологии для достижения лучших результатов.",
+      icon: <IconCode />,
     },
     {
-      title: "Pricing like no other",
+      title: "Высокое качество",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        "Гарантируем внимание к деталям и совершенство на каждом этапе разработки.",
+      icon: <IconCheck />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
-    },
-    {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
-    },
-    {
-      title: "24/7 Customer Support",
+      title: "Поддержка 24/7",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+        "Всегда на связи, чтобы помочь вам в любой ситуации, день и ночь.",
+      icon: <IconMessageChatbot />,
     },
     {
-      title: "Money back guarantee",
+      title: "Оптимизация для бизнеса",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+        "Наши решения помогают бизнесу развиваться и привлекать клиентов.",
+      icon: <IconGraph />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+      title: "Прозрачное ценообразование",
+      description: "Честные и доступные цены без скрытых платежей.",
+      icon: <IconWallet />,
+    },
+    {
+      title: "Адаптивный дизайн",
+      description: "Ваш сайт будет отлично выглядеть на любом устройстве.",
+      icon: <IconDeviceMobile />,
+    },
+    {
+      title: "Постоянное развитие",
+      description:
+        "Мы не останавливаемся на достигнутом и постоянно улучшаем наши технологии.",
+      icon: <IconGrowth />,
     },
   ];
   return (

@@ -12,7 +12,7 @@ const Contact = () => {
       <HeaderText text="Свяжитесь с Нами" />
       <div className="flex  items-center flex-col lg:flex-row ">
         <GlobeElement />
-        <div className="h-fit max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+        <div className="h-fit max-w-md w-full mx-auto rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
           <Form />
         </div>
       </div>
