@@ -1,6 +1,5 @@
 import React from "react";
 import Wrapper from "./Wrapper";
-import { Meteors } from "./ui/meteors";
 import { BackgroundLines } from "./ui/background-lines";
 import HeaderText from "./HeaderText";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
@@ -25,8 +24,6 @@ const AboutUs = () => {
               <div className="flex flex-row items-center justify-center w-full">
                 <AnimatedTooltip items={people} />
               </div>
-
-              <Meteors number={20} />
             </div>
           </div>
         </BackgroundLines>
