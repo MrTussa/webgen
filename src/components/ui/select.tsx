@@ -3,7 +3,7 @@
 import * as React from "react";
 import * as SelectPrimitive from "@radix-ui/react-select";
 import { Check, ChevronDown, ChevronUp } from "lucide-react";
-import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
+import { useMotionTemplate, useMotionValue, m } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const Select = SelectPrimitive.Root;
@@ -29,7 +29,7 @@ const SelectTrigger = React.forwardRef<
     mouseY.set(clientY - top);
   }
   return (
-    <motion.div
+    <m.div
       style={{
         background: useMotionTemplate`
         radial-gradient(
@@ -57,7 +57,7 @@ const SelectTrigger = React.forwardRef<
           <ChevronDown className="h-4 w-4 opacity-50" />
         </SelectPrimitive.Icon>
       </SelectPrimitive.Trigger>
-    </motion.div>
+    </m.div>
   );
 });
 SelectTrigger.displayName = SelectPrimitive.Trigger.displayName;

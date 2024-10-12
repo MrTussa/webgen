@@ -2,7 +2,7 @@
 "use client";
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
+import { useMotionTemplate, useMotionValue, m } from "framer-motion";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}
@@ -38,7 +38,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     );
 
     return (
-      <motion.div
+      <m.div
         style={{
           background: useMotionTemplate`
         radial-gradient(
@@ -56,7 +56,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         className="p-[2px] rounded-lg transition duration-300 group/input"
       >
         <input type={type} className={inputStyles} ref={ref} {...props} />
-      </motion.div>
+      </m.div>
     );
   }
 );

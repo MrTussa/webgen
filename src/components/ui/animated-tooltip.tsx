@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import {
-  motion,
+  m,
   useTransform,
   AnimatePresence,
   useMotionValue,
@@ -48,7 +48,7 @@ export const AnimatedTooltip = ({
         >
           <AnimatePresence mode="popLayout">
             {hoveredIndex === item.id && (
-              <motion.div
+              <m.div
                 initial={{ opacity: 0, y: 20, scale: 0.6 }}
                 animate={{
                   opacity: 1,
@@ -74,7 +74,7 @@ export const AnimatedTooltip = ({
                   {item.name}
                 </div>
                 <div className="text-white text-xs">{item.designation}</div>
-              </motion.div>
+              </m.div>
             )}
           </AnimatePresence>
           <Image
@@ -83,6 +83,7 @@ export const AnimatedTooltip = ({
             width={100}
             src={item.image}
             alt={item.name}
+            loading="eager"
             className="object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
           />
         </div>

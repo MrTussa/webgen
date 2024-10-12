@@ -2,7 +2,7 @@
 
 import { useScroll, useTransform } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { PinContainer } from "./3d-pin";
 import Image from "next/image";
@@ -61,26 +61,26 @@ export const ParallaxScroll = ({ items, className }: ParallaxScrollProps) => {
         {/* Первый ряд */}
         <div className="flex flex-row justify-center gap-5 mb-5">
           {firstPart.map((item, index) => (
-            <motion.div
+            <m.div
               key={`grid-1-${index}`}
               style={{ x: translateFirst }}
               className="rounded-lg"
             >
               <ContentCard {...item} />
-            </motion.div>
+            </m.div>
           ))}
         </div>
 
         {/* Второй ряд */}
         <div className="flex flex-row justify-center gap-5 mb-5">
           {secondPart.map((item, index) => (
-            <motion.div
+            <m.div
               key={`grid-2-${index}`}
               style={{ x: translateSecond }}
               className="rounded-lg"
             >
               <ContentCard {...item} />
-            </motion.div>
+            </m.div>
           ))}
         </div>
 
@@ -88,13 +88,13 @@ export const ParallaxScroll = ({ items, className }: ParallaxScrollProps) => {
         {isMobile && thirdPart && (
           <div className="flex flex-row justify-center gap-5">
             {thirdPart.map((item, index) => (
-              <motion.div
+              <m.div
                 key={`grid-3-${index}`}
                 style={{ x: translateThird }}
                 className="rounded-lg"
               >
                 <ContentCard {...item} />
-              </motion.div>
+              </m.div>
             ))}
           </div>
         )}
@@ -122,6 +122,7 @@ function ContentCard({ image, link, text }: ContentCardProps) {
               <Image
                 src={image}
                 alt="image"
+                loading="eager"
                 fill
                 className="object-cover rounded-lg"
               />

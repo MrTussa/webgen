@@ -1,5 +1,5 @@
 "use client";
-import { motion, useInView } from "framer-motion";
+import { m, useInView } from "framer-motion";
 import * as React from "react";
 
 export function TextFade({
@@ -20,7 +20,7 @@ export function TextFade({
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <motion.div
+    <m.div
       ref={ref}
       initial="hidden"
       animate={isInView ? "show" : ""}
@@ -36,11 +36,11 @@ export function TextFade({
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child) ? (
-          <motion.div variants={FADE_DOWN}>{child}</motion.div>
+          <m.div variants={FADE_DOWN}>{child}</m.div>
         ) : (
           child
         )
       )}
-    </motion.div>
+    </m.div>
   );
 }

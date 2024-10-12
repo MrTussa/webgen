@@ -11,6 +11,7 @@ const Wrapper = ({ header, children }: WrapperProps) => {
     <div className="relative min-h-screen flex flex-col justify-between">
       <div className="absolute w-full h-24 z-10">
         <Image
+          loading="eager"
           src="/border-top.svg"
           alt=""
           fill
@@ -20,6 +21,7 @@ const Wrapper = ({ header, children }: WrapperProps) => {
       {children}
       <div className="absolute w-full h-24 z-10 bottom-0">
         <Image
+          loading="eager"
           src="/border-bottom.svg"
           alt=""
           fill

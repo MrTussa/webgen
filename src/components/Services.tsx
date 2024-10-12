@@ -39,6 +39,7 @@ const items = [
       "Веб сайты под ключ, Лендинги, интернет магазины, доработки сайтов, корпоративный сайт - все это можно заказать у нас!",
     header: (
       <Image
+        loading="eager"
         src="/lama.png"
         alt="sites"
         fill
@@ -53,6 +54,7 @@ const items = [
       "Сделаем ботов анонимных сообщений, боты интернет магазинов с поддержкой различных языков",
     header: (
       <Image
+        loading="eager"
         src="/telegram.jpg"
         alt="telegram bots"
         fill
@@ -66,6 +68,7 @@ const items = [
     description: "3Д модели любой сложности, Архитектура, Чертежи, Анимации",
     header: (
       <Image
+        loading="eager"
         src="/blender.jpg"
         alt="3D"
         fill

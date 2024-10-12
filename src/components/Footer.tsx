@@ -10,17 +10,30 @@ const Footer = () => {
         {/* LEFT */}
         <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8 ">
           <Link href="/">
-            <Image src="/logo.svg" alt="logo" width={300} height={150} />
+            <Image
+              loading="eager"
+              src="/logo.svg"
+              alt="logo"
+              width={300}
+              height={150}
+            />
           </Link>
           <p className="font-semibold">+998(90)101-18-74 / webgen@gmail.com</p>
           <div className="flex gap-6">
             <Image
+              loading="eager"
               src="/instagram.png"
               alt="instagram"
               width={16}
               height={16}
             />
-            <Image src="/x.png" alt="x" width={16} height={16} />
+            <Image
+              loading="eager"
+              src="/x.png"
+              alt="x"
+              width={16}
+              height={16}
+            />
           </div>
         </div>
         {/* CENTER */}
@@ -50,11 +63,41 @@ const Footer = () => {
         <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
           <span className="font-semibold">Безопасные переводы</span>
           <div className="flex justify-between">
-            <Image src="/visa.png" alt="visa" width={40} height={20} />
-            <Image src="/skrill.png" alt="skrill" width={40} height={20} />
-            <Image src="/paypal.png" alt="paypal" width={40} height={20} />
-            <Image src="/visa.png" alt="visa" width={40} height={20} />
-            <Image src="/visa.png" alt="visa" width={40} height={20} />
+            <Image
+              loading="eager"
+              src="/visa.png"
+              alt="visa"
+              width={40}
+              height={20}
+            />
+            <Image
+              loading="eager"
+              src="/skrill.png"
+              alt="skrill"
+              width={40}
+              height={20}
+            />
+            <Image
+              loading="eager"
+              src="/paypal.png"
+              alt="paypal"
+              width={40}
+              height={20}
+            />
+            <Image
+              loading="eager"
+              src="/visa.png"
+              alt="visa"
+              width={40}
+              height={20}
+            />
+            <Image
+              loading="eager"
+              src="/visa.png"
+              alt="visa"
+              width={40}
+              height={20}
+            />
           </div>
         </div>
       </div>

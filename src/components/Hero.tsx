@@ -14,6 +14,7 @@ const Hero = () => {
               alt="logo"
               width={250}
               height={150}
+              loading="eager"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="absolute left-10 top-1/4"
             />
