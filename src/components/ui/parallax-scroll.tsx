@@ -7,6 +7,8 @@ import { cn } from "@/lib/utils";
 import { PinContainer } from "./3d-pin";
 import Image from "next/image";
 
+// TODO: в будущем исправить на useRef aka ref
+
 interface ParallaxScrollProps {
   items: { image: string; link: string; text: string }[];
   className?: string;

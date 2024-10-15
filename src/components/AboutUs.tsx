@@ -3,15 +3,17 @@ import Wrapper from "./Wrapper";
 import { BackgroundLines } from "./ui/background-lines";
 import HeaderText from "./HeaderText";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
+import ParallaxDiv from "./ParallaxDiv"; // Импортируем новый компонент
 
 const AboutUs = () => {
   return (
     <section className="relative" id="aboutUs">
       <Wrapper>
         <BackgroundLines className="flex">
-          <div className=" flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mb-10">
+          <ParallaxDiv className="flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mb-10">
             <HeaderText text="О Нас" />
-            <div className="relative max-w-2xl overflow-hidden shadow-xl bg-gray-900 border border-gray-800 px-4 py-8  rounded-2xl flex flex-col justify-end items-start">
+
+            <div className="relative max-w-2xl overflow-hidden shadow-xl bg-gray-900 border border-gray-800 px-4 py-8 rounded-2xl flex flex-col justify-end items-start">
               <p className="font-thin text-base sm:text-xl text-slate-100 mb-4 relative z-50">
                 Мы — молодая и перспективная команда разработчиков, объединённая
                 общей целью: помочь вашему бренду расти и развиваться в цифровом
@@ -25,7 +27,7 @@ const AboutUs = () => {
                 <AnimatedTooltip items={people} />
               </div>
             </div>
-          </div>
+          </ParallaxDiv>
         </BackgroundLines>
       </Wrapper>
     </section>
