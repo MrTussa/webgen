@@ -14,7 +14,7 @@ const AboutUs = () => {
             <HeaderText text="О Нас" />
 
             <div className="relative max-w-2xl overflow-hidden shadow-xl bg-gray-900 border border-gray-800 px-4 py-8 rounded-2xl flex flex-col justify-end items-start">
-              <p className="font-thin text-base sm:text-xl text-slate-100 mb-4 relative z-50">
+              <h4 className="font-thin text-base sm:text-xl text-slate-100 mb-4 relative z-50">
                 Мы — молодая и перспективная команда разработчиков, объединённая
                 общей целью: помочь вашему бренду расти и развиваться в цифровом
                 пространстве. Наш подход основан на создании уникальных и
@@ -22,7 +22,7 @@ const AboutUs = () => {
                 бизнеса. Мы гарантируем высокое качество, внимание к деталям и
                 использование передовых технологий, чтобы каждый проект был
                 успешным и соответствовал вашим ожиданиям.
-              </p>
+              </h4>
               <div className="flex flex-row items-center justify-center w-full">
                 <AnimatedTooltip items={people} />
               </div>

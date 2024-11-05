@@ -15,6 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <link rel="icon" href="/logo.svg" sizes="any" />
       <body className={`antialiased overflow-x-hidden`}>
         <LazyMotion features={domAnimation}>
           {children}

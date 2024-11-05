@@ -72,5 +72,4 @@ const items = [
     className: "sm:flex-row-reverse flex-col",
   },
 ];
-
 export default Services;

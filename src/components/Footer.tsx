@@ -20,20 +20,26 @@ const Footer = () => {
           </Link>
           <p className="font-semibold">+998(90)101-18-74 / webgen@gmail.com</p>
           <div className="flex gap-6">
-            <Image
-              loading="eager"
-              src="/instagram.png"
-              alt="instagram"
-              width={16}
-              height={16}
-            />
-            <Image
+            <a
+              href="https://www.instagram.com/webgen_uz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                loading="eager"
+                src="/instagram.png"
+                alt="instagram"
+                width={16}
+                height={16}
+              />
+            </a>
+            {/* <Image
               loading="eager"
               src="/x.png"
               alt="x"
               width={16}
               height={16}
-            />
+            /> */}
           </div>
         </div>
         {/* CENTER */}
@@ -60,7 +66,7 @@ const Footer = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
+        {/* <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
           <span className="font-semibold">Безопасные переводы</span>
           <div className="flex justify-between">
             <Image
@@ -99,7 +105,7 @@ const Footer = () => {
               height={20}
             />
           </div>
-        </div>
+        </div> */}
       </div>
       {/* BOTTOM */}
       <div className="flex flex-col md:flex-row items-center justify-between mt-16">
