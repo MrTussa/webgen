@@ -35,40 +35,6 @@ const Form = () => {
   };
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        "service_swc7crb",
-        "template_bk8nkru",
-        {
-          from_name: `${form.firstName} ${form.lastName}`,
-          to_name: "Webgen",
-          from_email: form.email,
-          to_emaild: "dd993736@gmail.com",
-          message: `Услуга ${form.service} '\n'${form.message}`,
-        },
-        "ZJ8M7NJyXUVAygz8n"
-      )
-
-      .then(
-        () => {
-          setLoading(false);
-          alert("Email send.");
-          setForm({
-            firstName: "",
-            lastName: "",
-            email: "",
-            service: form.service,
-            message: "",
-          });
-        },
-        (error: any) => {
-          setLoading(false);
-          console.log(error);
-          alert("Что то пошло не так");
-        }
-      );
   };
   return (
     <form className="my-8" onSubmit={handleSubmit} ref={formRef}>
